@@ -1,3 +1,8 @@
+/**
+ * @jest-environment jsdom
+*/
+
+
 import Popover from '../src/popover';
 
 test('Popover toggles in DOM', () => {

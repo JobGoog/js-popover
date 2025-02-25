@@ -5,7 +5,6 @@ export default class Popover {
       this.content = content;
       this.popoverEl = null;
   
-      // Привязываем обработчик
       this.element.addEventListener('click', (event) => {
         event.preventDefault();
         this.toggle();
@@ -21,7 +20,6 @@ export default class Popover {
         <div class="popover-content">${this.content}</div>
       `;
   
-      // Позиционируем относительно элемента
       const { top, left, height } = this.element.getBoundingClientRect();
       container.style.position = 'absolute';
       container.style.top = `${top + height + window.scrollY + 10}px`;

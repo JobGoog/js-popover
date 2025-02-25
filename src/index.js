@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   new Popover(
     button,
-    'Popover title',
-    'And here\'s some amazing content. It\'s very engaging, right?'
+    'Popover test',
+    'test content',
   );
 });
